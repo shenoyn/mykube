@@ -7,7 +7,7 @@ spec:
   ports:
   - port: 7000
     protocol: TCP
-    targetPort: 8080
+    targetPort: 80
   selector:
     name: sample
 ---
@@ -30,4 +30,4 @@ spec:
         imagePullPolicy: Never
         image: nginx:latest
         ports:
-        - containerPort: 8080
+        - containerPort: 80
